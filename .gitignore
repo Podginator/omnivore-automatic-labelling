@@ -1,0 +1,22 @@
+# IntelliJ IDEA
+.idea/
+
+# Compiled files
+node_modules/
+dist/
+out/
+
+# Editor-specific files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+
+# OS-specific files
+.DS_Store
+Thumbs.db

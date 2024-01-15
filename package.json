@@ -1,0 +1,37 @@
+{
+  "name": "omnivore-automatic-tagging",
+  "version": "1.0.0",
+  "description": "An automatic tagging solution for Omnivore using Omnivore Webhooks",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --files src/app.ts",
+    "lint": "eslint src --ext ts,js,tsx,jsx",
+    "lint:fix": "eslint src --fix --ext ts,js,tsx,jsx"
+  },
+  "author": "Thomas Rogers",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.490.0",
+    "@aws-sdk/lib-dynamodb": "^3.490.0",
+    "aws-lambda-fastify": "^2.2.0",
+    "aws4-axios": "^3.3.0",
+    "axios": "^1.6.5",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.25.2",
+    "logform": "^2.6.0",
+    "openai": "^4.24.7",
+    "typescript": "^5.3.3",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "aws-cdk": "^2.121.1",
+    "aws-lambda": "^1.0.7",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.2.2"
+  }
+}
