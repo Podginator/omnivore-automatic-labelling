@@ -27,8 +27,8 @@ export class OmnivoreTaggingStack extends cdk.Stack {
     });
 
     const lambdaFn = new Lambda.NodejsFunction(this, "IncomingWebhook", {
-      entry: path.join(__dirname, "../../src/lambda.ts"),
-      depsLockFilePath: path.join(__dirname, "../../package-lock.json"),
+      entry: path.join(__dirname, "../../../src/lambda.ts"),
+      depsLockFilePath: path.join(__dirname, "../../../package-lock.json"),
       handler: "handler",
       runtime: Runtime.NODEJS_20_X,
       memorySize: 1024,
